@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="89dp"
+        android:ems="10"
+        android:hint="@string/enter_text"
+        android:textColorHint="#ffff23d1">
+
+        <requestFocus/>
+    </EditText>
+
+    <Button
+        android:id="@+id/bspeak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="Speak"
+        android:onClick="doSomething"
+        />
+
+
+    <Button
+        android:id="@+id/bstopspeaking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/bspeak"
+        android:layout_below="@id/bspeak"
+        android:layout_marginTop="42dp"
+        android:text="Stop"
+        android:onClick="doSomething"
+        />
+
+
+</LinearLayout>
